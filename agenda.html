@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>Aula de JS</title>
+		
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		
+		<script type="text/javascript" src="agenda.js">		
+		</script>
+		
+		<style>
+            label{
+                width: 100px;
+                display: inline-block;
+            }
+            .form{
+                margin: 1% 0;
+                width: 90%;
+
+            }
+            table{
+                margin: 10px 0;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            table td, table th{
+                border: 1px solid rgb(2, 2, 2);
+                padding: 5px;
+            }
+                
+            thead{
+                background-color: rgb(201, 192, 192);
+            }
+		</style>
+		
+	</head>
+	
+	<body>
+        <h1>Agenda</h1>
+        <fieldset class="form">
+            <label >Nome</label>
+            <input id="nome" type="text"/>
+            <br>
+            <label >Telefone</label>
+            <input id="telefone" type="text"/>
+            <br>
+            <label >Email</label>
+            <input id="email" type="text"/>
+            <br>
+
+            <button onclick="gravar()">Gravar</button>
+        </fieldset>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+            </tbody>
+        </table>
+	</body>
+
+</html>
+
+
+
+
+
+
+
