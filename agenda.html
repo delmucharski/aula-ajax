@@ -4,9 +4,6 @@
 		
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		
-		<script type="text/javascript" src="agenda.js">		
-		</script>
-		
 		<style>
             label{
                 width: 100px;
@@ -31,6 +28,14 @@
             thead{
                 background-color: rgb(201, 192, 192);
             }
+
+            #msg-erro{
+                color: red;
+                border: 1px solid;
+                padding: 4px;
+                background-color: #efff00;
+                display: none;
+            }
 		</style>
 		
 	</head>
@@ -38,14 +43,17 @@
 	<body>
         <h1>Agenda</h1>
         <fieldset class="form">
+
+            <div id="msg-erro">Mensagem de erro</div>
+
             <label >Nome</label>
-            <input id="nome" type="text"/>
+            <input id="nome" type="text" placeholder="Nome" required/>
             <br>
             <label >Telefone</label>
-            <input id="telefone" type="text"/>
+            <input id="telefone" type="text" placeholder="Telefone" required/>
             <br>
             <label >Email</label>
-            <input id="email" type="text"/>
+            <input id="email" type="text" placeholder="Email" required/>
             <br>
 
             <button onclick="gravar()">Gravar</button>
@@ -62,13 +70,8 @@
             <tbody id="lista">
             </tbody>
         </table>
+        <script type="text/javascript" src="agenda.js">		
+		</script>
 	</body>
 
 </html>
-
-
-
-
-
-
-
