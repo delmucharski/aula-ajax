@@ -24,7 +24,7 @@ function gravar(){
         return; //early return
     }
 
-     if (e.value=="" || e.value.search("@")){
+     if (e.value=="" || e.value.search("@")!==true){
         exibeErro("O campo EMAIL é obrigatório. Exemplo:(abc@gmail.com)");
         e.focus();
         return; //early return
