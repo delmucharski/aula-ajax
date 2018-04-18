@@ -1,0 +1,11 @@
+[{
+    "nome": "Del",
+    "email":"abc@abc.com",
+    "cep": "12345-678",
+    "datanasc":"01/02/0003"
+},{
+    "nome": "Del2",
+    "email":"abc@abc2.com",
+    "cep": "12345-6782",
+    "datanasc":"01/02/0002"
+}]
