@@ -35,14 +35,25 @@ $(function(){
         var c = $("input[name=cep]").val();
         var d = $("input[name=data-nasc]").val();
 
-        var tr = '<tr>'
-                +'<td>'+ n +'</td>'
-                +'<td>'+ e +'</td>'
-                +'<td>'+ c +'</td>'
-                +'<td>'+ d +'</td>'
-                +'</tr>';
-        var tr2 = $(tr).hide().fadeIn(1500);
-        $("tbody").append(tr2);
+        //ADD NO JSON PHP
+        var form = {
+            "nome":n,
+            "email":e,
+            "cep":c,
+            "datanasc":d
+        };
+
+        //ADD DIRETO NO HTML
+        // var tr = '<tr>'
+        //         +'<td>'+ n +'</td>'
+        //         +'<td>'+ e +'</td>'
+        //         +'<td>'+ c +'</td>'
+        //         +'<td>'+ d +'</td>'
+        //         +'</tr>';
+        // var tr2 = $(tr);
+        // $("tbody").append(tr2);
+
+        $.POST('/clientes.php', form);
     });
 
     //CEP DIGITAR SOMENTE NUMEROS
