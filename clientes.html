@@ -4,8 +4,12 @@
 		
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
         <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script type="text/javascript" src="jquery-ui-1.12.1.custom/datepicker-pt-BR.js"></script>
+
         <script type="text/javascript" src="clientes.js"></script>
-		
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css"/>
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css"/>
 		<style>
             fieldset{
                 width: 400px;
@@ -49,16 +53,16 @@
         <h1>Cadastro de Clientes</h1>
         <fieldset>
             <legend>Dados do Cliente</legend>
-            <label for="">Nome</label>
+            <label >Nome</label>
             <input type="text" name="nome"/>
             <br/>
-            <label for="">Email</label>
+            <label >Email</label>
             <input type="text" name="email"/>
             <br/>
-            <label for="">CEP</label>
+            <label >CEP</label>
             <input type="text" name="cep"/>
             <br/>
-            <label for="">Data de Nascimento</label>
+            <label >Data de Nascimento</label>
             <input type="text" name="data-nasc"/>
             <br/>
             <button id="add">Adicionar</button>
